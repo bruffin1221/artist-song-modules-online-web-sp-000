@@ -2,7 +2,7 @@ require 'pry'
 
 class Artist
   extend Memorable
-  extend Findable   
+  extend Findable
 
   attr_accessor :name
   attr_reader :songs
@@ -13,10 +13,6 @@ class Artist
     @@artists << self
     @songs = []
   end
-
-  #(name)
-  #  @@artists.detect{|a| a.name == name}
-  #end
 
   def self.all
     @@artists
