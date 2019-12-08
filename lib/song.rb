@@ -1,7 +1,7 @@
 require 'pry'
 
 class Song
-include Paramable 
+include Paramable
 extend Memorable
 extend Findable
 
@@ -21,9 +21,5 @@ extend Findable
   def artist=(artist)
     @artist = artist
   end
-
-#  def to_param
-#    name.downcase.gsub(' ', '-')
-#  end
 
 end
