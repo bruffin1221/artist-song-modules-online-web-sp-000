@@ -1,6 +1,7 @@
 require 'pry'
 
 class Artist
+  include Paramable 
   extend Memorable
   extend Findable
 
@@ -38,5 +39,5 @@ class Artist
   #def to_param
   #  name.downcase.gsub(' ', '-')
   #end
-  
+
 end
